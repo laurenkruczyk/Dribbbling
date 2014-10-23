@@ -1,0 +1,127 @@
+*{ margin: 0; padding: 0;}
+
+body {
+  overflow: hidden;
+}
+
+.thingies {
+  /*padding: 100px 0;*/
+  background: #FF5805;
+  background: -linear-gradient(top, #FF5805 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #FF5805 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #FF5805 0%, #fff 100%);
+}
+
+.thingy img  {
+  width: 100px; height: 100px;
+  overflow: hidden;
+  position: relative; 
+  
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  overflow: hidden;
+}
+
+
+.x1 {
+  opacity: 0.8; 
+  padding-top: 20px;
+
+  animation: movethingies 8s linear infinite;
+  -webkit-animation: movethingies 8s linear infinite;
+  -moz-animation: movethingies 8s linear infinite;
+}
+
+.x2 {
+  left: 200px; margin-top: 20px;
+
+  animation: movethingies 14s linear infinite;
+  -webkit-animation: movethingies 14s linear infinite;
+  -moz-animation: movethingies 14s linear infinite;
+}
+
+.x3 {
+  margin-left: -250px; margin-top:  20px;
+  opacity: 0.8; 
+  
+  animation: movethingies 11s linear infinite;
+  -webkit-animation: movethingies 11s linear infinite;
+  -moz-animation: movethingies 11s linear infinite;
+}
+
+.x4 {
+  margin-left: 470px; margin-top: 20px;
+  opacity: 0.8; 
+  
+  animation: movethingies 7s linear infinite;
+  -webkit-animation: movethingies 7s linear infinite;
+  -moz-animation: movethingies 7s linear infinite;
+}
+
+.x5 {
+  margin-left: -150px; margin-top: 20px;
+  
+  animation: movethingies 12s linear infinite;
+  -webkit-animation: movethingies 12s linear infinite;
+  -moz-animation: movethingies 12s linear infinite;
+}
+
+  keyframes movethingies {
+  0% {margin-left: 1000px;}
+  40% {margin-left: 60px;}
+  75% {margin-left: 800px;}
+  100% {margin-left: 200px;}
+  }
+
+  @-webkit-keyframes movethingies {
+   0% {margin-left: 1000px;}
+  40% {margin-left: 60px;}
+  75% {margin-left: 800px;}
+  100% {margin-left: 200px;}
+  }
+
+  @-moz-keyframes movethingies {
+  0% {margin-left: 1000px;}
+  40% {margin-left: 60px;}
+  75% {margin-left: 800px;}
+  100% {margin-left: 200px;}
+  }
+
+
+      /*HOW TO BOUNCE??*/
+/*
+  @keyframes bounce { 
+      0%, 25%, 70%, 100% {transform: translateY(0);}  
+      0% {transform: translateY(20px);}
+      25% {transform: translateY(1000px);} 
+      70% {transform: translateY(20px);} 
+      100% {transform: translateY(-1000px);} 
+  } 
+     
+
+  @-webkit-keyframes bounce { 
+      0%, 25%, 70%, 100% {transform: translateY(0);}  
+      0% {transform: translateY(20px);}
+      25% {transform: translateY(1000px);} 
+      70% {transform: translateY(20px);} 
+      100% {transform: translateY(-1000px);} 
+  } 
+     
+
+  @-moz-keyframes bounce { 
+         0%, 25%, 70%, 100% {transform: translateY(0);} 
+      0% {transform: translateY(20px);}
+     25% {transform: translateY(1000px);}
+      70% {transform: translateY(20px);} 
+      100% {transform: translateY(-1000px);} 
+  } 
+    
+  /* Add the animation */
+  
+ /*  .thingy img { 
+      animation-name: bounce 
+      -webkit-animation-name: bounce; 
+      -moz-animation-name: bounce; 
+  }
+    */
